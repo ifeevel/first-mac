@@ -81,7 +81,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 brew install neofetch
 ```
 
-![](https://cdn.fuoshuo.com/blog/img/body/2020/06/4SPYFG.png)
+![](img/4SPYFG.png)
 
 ## 其他
 
