@@ -88,7 +88,7 @@ brew install neofetch
 如果您需要升级您的 macOS 下的`zsh`版本，可按以下命令操作：
 
 ```bash
-brew install --without-etcdir zsh
+brew install zsh
 # add shell path
 sudo vim /etc/shells
 # add the following line into the very end of the file(/etc/shells)
