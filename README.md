@@ -21,7 +21,7 @@
 让`zsh`复杂的配置降到`0`门槛，完全兼容`bash`。并提供了丰富的可选插件、主题。
 
 > 仓库地址：https://github.com/ohmyzsh/ohmyzsh
->
+> 官网：https://ohmyz.sh
 
 安装命令：
 
