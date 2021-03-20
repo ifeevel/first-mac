@@ -16,6 +16,17 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+可能需要的一些库
+```bash
+brew tap homebrew/cask
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-drivers
+brew tap homebrew/cask-fonts
+brew tap homebrew/services
+brew tap buo/cask-upgrade
+brew tap homebrew/bundle
+```
+
 ### oh my zsh
 
 让`zsh`复杂的配置降到`0`门槛，完全兼容`bash`。并提供了丰富的可选插件、主题。
