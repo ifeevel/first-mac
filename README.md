@@ -79,6 +79,16 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 由于 `Space­ship Prompt` 需要特殊的符号来显示开发环境版本信息，所以需要在终端工具里选择 `Pow­er­line Fonts` 字体 `Meslo LG` 系列中的一个，如 `"Meslo LG M for Powerline”`。
 
+### Quick Look
+
+> 仓库地址：https://github.com/sindresorhus/quick-look-plugins
+
+安装命令：
+
+```bash
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
+```
+
 ### neofetch
 
 命令行系统信息工具。
