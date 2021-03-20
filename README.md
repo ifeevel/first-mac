@@ -8,12 +8,12 @@
 软件包管理器，完全基于 Git 和 Ruby。使用`brew cask`安装 macOS 应用程序、字体和插件以及其他非开源软件，会将软件包安装到独立目录，并将其文件软链接至 `/usr/local` 。
 
 > 仓库地址：https://github.com/Homebrew
->
+> 官网：https://brew.sh
 
 安装命令：
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### oh my zsh
