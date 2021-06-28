@@ -1,7 +1,15 @@
 # First Mac
  收录在 macOS 中使用体验绝佳的开源项目，如果你是第一次使用 macOS，那么这些项目一定必不可少！同时欢迎提交 PR 和建议。
 
-## 开发人员
+## 优化命令
+
+### 安全性与隐私-开启任何来源选项
+
+```bash
+sudo spctl --master-disable
+```
+
+## 优秀项目
 
 ### Homebrew
 
@@ -16,7 +24,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-可能需要的一些库
+普遍需要的一些库
 ```bash
 brew tap homebrew/cask
 brew tap homebrew/cask-versions
@@ -40,7 +48,25 @@ brew tap homebrew/bundle
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+常用插件：
+
+```bash
+# 命令语法高亮
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+# 历史记录建议
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+# 然后在配置文件中加入以上插件：
+vim ~/.zshrc
+# 编辑 plugins，将以上插件名称加入
+plugins=( [plugins...] zsh-syntax-highlighting zsh-autosuggestions)
+```
+
+
+
 ### Powerline Fonts
+
+#### 普通全安装方式
 
 `Vim statusline` 插件、字体集，支持很多特殊的`icon`字符。
 
@@ -57,6 +83,15 @@ cd fonts
 # clean-up a bit
 cd ..
 rm -rf fonts
+```
+
+#### 使用 Homebrew 
+
+```bash
+# 搜索 powerline 字体命令：
+brew search powerline
+# 选择性安装
+brew install font-meslo-for-powerline
 ```
 
 ### Spaceship ZSH
@@ -82,6 +117,8 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 ### Quick Look
 
 > 仓库地址：https://github.com/sindresorhus/quick-look-plugins
+>
+> 目前可以使用 AppStore 中的`iPreview`代替
 
 安装命令：
 
@@ -103,6 +140,8 @@ brew install neofetch
 ```
 
 ![](img/4SPYFG.png)
+
+
 
 ## 其他
 
