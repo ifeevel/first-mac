@@ -62,28 +62,11 @@ vim ~/.zshrc
 plugins=( [plugins...] zsh-syntax-highlighting zsh-autosuggestions)
 ```
 
-
-
 ### Powerline Fonts
-
-#### 普通全安装方式
 
 `Vim statusline` 插件、字体集，支持很多特殊的`icon`字符。
 
 > 仓库地址：https://github.com/powerline/fonts
-
-安装命令：
-
-```bash
-# clone
-git clone https://github.com/powerline/fonts.git --depth=1
-# install
-cd fonts
-./install.sh
-# clean-up a bit
-cd ..
-rm -rf fonts
-```
 
 #### Homebrew 安装方式
 
@@ -100,16 +83,14 @@ brew install homebrew/cask-fonts/font-meslo-for-powerline
 
 > 仓库地址：https://github.com/denysdovhan/spaceship-prompt
 
-安装命令：
+#### Homebrew 安装方式
 
 ```bash
-# oh-my-zsh 环境下的安装
+brew install spaceship
 
-# Clone this repo:
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-# Symlink spaceship.zsh-theme to your oh-my-zsh custom themes directory:
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-# And Set ZSH_THEME="spaceship" in your .zshrc.
+# Add prompt initialization to your .zshrc:
+echo "source $(brew --prefix)/opt/spaceship/spaceship.zsh" >>! ~/.zshrc
+# 并注释掉原有的ZSH_THEME
 ```
 
 由于 `Space­ship Prompt` 需要特殊的符号来显示开发环境版本信息，所以需要在终端工具里选择 `Pow­er­line Fonts` 字体 `Meslo LG` 系列中的一个，如 `"Meslo LG M for Powerline”`。
@@ -118,7 +99,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 > 仓库地址：https://github.com/sindresorhus/quick-look-plugins
 >
-> 目前可以使用 AppStore 中的`iPreview`代替
+> 目前建议使用 AppStore 中的`iPreview`代替
 
 安装命令：
 
@@ -132,16 +113,13 @@ brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspici
 
 > 仓库地址：https://github.com/dylanaraps/neofetch
 
-安装命令：
+#### Homebrew 安装方式
 
 ```bash
-# (homebrew)
 brew install neofetch
 ```
 
 ![](img/4SPYFG.png)
-
-
 
 ## 其他
 
@@ -158,7 +136,7 @@ chsh -s /usr/local/bin/zsh
 # then you should to restart your computer
 ```
 
-终端代理 `Alias`分享：
+终端代理 `Alias`：
 
 ```bash
 alias ss_proxy='export all_proxy=socks5://127.0.0.1:1086'
