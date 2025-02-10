@@ -74,7 +74,7 @@ plugins=( [plugins...] zsh-syntax-highlighting zsh-autosuggestions)
 # 搜索 powerline 字体命令：
 brew search powerline
 # 选择性安装
-brew install homebrew/cask-fonts/font-meslo-for-powerline
+brew install font-meslo-for-powerline
 ```
 
 ### Spaceship ZSH
